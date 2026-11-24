@@ -1,0 +1,19 @@
+name: qqbot
+repo: https://github.com/NousResearch/hermes-labs-plugins
+sha: 8ab64db6ee8f33bd642abaa821c9b78f7b8f4379
+subdir: qqbot
+description: "QQ Bot messaging platform on Tencent's official QQ Bot API v2 (DMs, group and guild chats over QQ's bot WebSocket, native media, voice transcription, scan-to-configure setup, cron home-channel delivery). Formerly built into Hermes core; existing users are migrated automatically. A Hermes Labs plugin: built by Nous Research, not supported, and likely not maintained going forward. Fixes from the community are welcome. Disclosure — messages and media travel between Tencent's QQ Bot servers (bots.qq.com, api.sgroup.qq.com and the bot WebSocket) and your Hermes gateway using your own QQ Bot App ID and App Secret. The plugin downloads attachment URLs from received messages, uploads voice audio to your configured speech-to-text provider (Zhipu GLM-ASR by default) when QQ has no transcript, contacts q.qq.com only during scan-to-configure setup, and its requests carry a User-Agent with the adapter, Python, OS and Hermes versions."
+maintainer: NousResearch
+tier: community
+version: "2.0.0"
+category: platform
+docs_url: https://github.com/NousResearch/hermes-labs-plugins/tree/main/qqbot
+image: https://raw.githubusercontent.com/NousResearch/hermes-labs-plugins/8ab64db6ee8f33bd642abaa821c9b78f7b8f4379/assets/qqbot.jpg
+platforms: []
+capabilities:
+  provides_tools: []
+  provides_hooks: []
+  provides_middleware: []
+  requires_env:
+    - QQ_APP_ID
+    - QQ_CLIENT_SECRET
